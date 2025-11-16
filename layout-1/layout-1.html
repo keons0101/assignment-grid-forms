@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./layout-1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>layout-1</title>
 </head>
 <body>
-    
+    <main class="formBox">
+        <div class="formBox__overlay formBox__overlay--blue"></div>
+        <div class="formBox__overlay formBox__overlay--white"></div>
+        <section class="formBox__section">
+            <div class="formBox__text-container">
+                <h1 class="formBox__title">Connect With Our Team</h1>
+                <p class="formBox__text">Fill the form so that our team can reach out to you</p>
+            </div>
+
+            <form class="formBox__form">
+                <input class="formBox__input" type="text" name="name" id="name" placeholder="Name" required>
+                <input class="formBox__input" type="email" name="email" id="email" placeholder="Email" required>
+                <input class="formBox__input formBox__input--phone" type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+            </form>
+
+            <button class="formBox__submit" type="submit">Submit</button>
+        </section>
+    </main>
 </body>
 </html>
