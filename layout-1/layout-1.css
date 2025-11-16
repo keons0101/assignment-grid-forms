@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    z-index: 10;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: white;
+}
+
+.formBox {
+    width: 598px;
+    height: 495px;
+
+    padding: 96px 78px;
+
+    display: grid;
+    align-content: start;
+
+    position: relative;
+    background-image: url("../images/layout-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.formBox__section {
+    height: 303px;
+    width: 442px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 72px 102px 7px 47px;
+    gap: 25px;
+    color: white;
+}
+
+
+/* double overlay because in the figma file the image has opacity 25% and white background, but i didnt know how to set the opacity for this image. sooo i thought it would be easier if I just create another white overlay with opacity 75%, and i was right lol  */
+.formBox__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.formBox__overlay--blue {
+    background-color: rgba(22, 42, 227, 0.85);
+    z-index: 2;
+}
+
+.formBox__overlay--white {
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 1;
+}
+
+/* ----- Grid that contains text elements */
+.formBox__text-container {
+    grid-column: 1 / 3;
+    display: grid;
+    gap: 5px;
+}
+
+.formBox__title {
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.formBox__text {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+/* ----- Grid that contains input elements */
+.formBox__form {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.formBox__input {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 6px;
+    color: #9CA0AA;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.16px;
+}
+
+.formBox__input--phone {
+    grid-column: 1 / 3;
+}
+
+
+/* -----Submit button */
+.formBox__submit {
+    grid-row: 4;
+    width: 127px;
+    border: none;
+    background-color: white;
+    color: #162AE3;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
+}
