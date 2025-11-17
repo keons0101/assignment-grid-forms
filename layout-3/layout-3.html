@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./layout-3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
     <title>layout-3</title>
 </head>
 <body>
+    <main class="appointment">
+        <section class="appointment__section">
+            <h1 class="appointment__title">Book your appointment now</h1>
+            <p class="appointment__subtitle">So our team can reach out to you on time</p>
     
+            <form class="appointment__form" action="">
+                <!-- ----- Name ----- -->
+                <label class="appointment__label">Full Name</label>
+                <input class="appointment__input appointment__input--name" type="text" name="" id="" placeholder="eg: John Doe" aria-label="Full Name">
+    
+                <!-- ----- Email ----- -->
+                <label class="appointment__label" for="">Email</label>
+                <input class="appointment__input appointment__input--email" type="text" name="" id="" placeholder="eg: john@email.com" aria-label="Email">
+    
+                <!-- ----- Phone Number ----- -->
+                <label class="appointment__label" for="">Phone Number</label>
+                <select class="appointment__select appointment__select--country" name="" id="" aria-label="Country code">
+                    <option value="971">+971</option>
+                    <option value="1">+1</option>
+                    <option value="57">+57</option>
+                </select>
+                <input class="appointment__input appointment__input--phone" type="tel" name="" id="" placeholder="543210987" aria-label="Phone Number">
+    
+                <!-- ----- Date ----- -->
+                <label class="appointment__label" for="">Available Date</label>
+                <select class="appointment__select appointment__select--date" name="" id="" aria-label="Available date">
+                    <option value="2025-11-17">November 18, 2025</option>
+                    <option value="2025-11-18">November 19, 2025</option>
+                    <option value="2025-11-19">November 20, 2025</option>
+                    <option value="2025-11-20">November 21, 2025</option>
+                    <option value="2025-11-21">November 22, 2025</option>
+                </select>
+    
+                <!-- ----- Message ----- -->
+                <label class="appointment__label" for="">Share Your Message</label>
+                <textarea class="appointment__textarea appointment__textarea--message" name="" id="" placeholder="Message" aria-label="Message"></textarea>   
+            </form>
+        </section>
+    </main>
 </body>
 </html>
