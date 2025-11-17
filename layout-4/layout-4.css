@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, sans-serif;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+.application__section {
+    height: 90%;
+    width: 60%;
+    background-color: #FCFCFC;
+    border-radius: 12px;
+    border: 1px solid #EDDEDE;
+}
+
+.application__form {
+    padding: 16px 28px 23px 18px;
+    display: grid;
+    height: 100%;
+    column-gap: 47px;
+    row-gap: 15px;
+    grid-template-areas: 
+    "header header"
+    "name last-name"
+    "email job"
+    "adress adress"
+    "adress adress"
+    "city pincode"
+    "date cv"
+    ". submit"
+    ;
+}
+
+.application__header {
+    grid-area: header;
+}
+
+.application__header h1 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.application__input {
+    width: 100%;
+    border: 1px solid #D2D2D2;
+    border-radius: 3px;
+    padding: 1px 8px;
+    background-color: #FCFCFC;
+}
+
+.application__select {
+    width: 100%;
+    background-color: #FCFCFC;
+    border: 1px solid #D2D2D2;
+    border-radius: 3px;
+    padding: 1px 8px;
+}
+
+.application__name-container {
+    grid-area: name;
+}
+
+.application__last-name-container {
+    grid-area: last-name;
+}
+
+.application__email-container {
+    grid-area: email;
+}
+
+.application__job-container {
+    grid-area: job;
+}
+
+.application__adress-container {
+    grid-area: adress;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.application__textarea--adress {
+    resize: none;
+    border: 1px solid #D2D2D2;
+    border-radius: 3px;
+    padding: 1px 8px;
+}
+
+
+.application__city-container {
+    grid-area: city;
+}
+
+.application__pincode-container {
+    grid-area: pincode;
+}
+
+.application__input--zip {
+    text-transform: uppercase;
+}
+
+.application__input--zip::placeholder {
+    text-transform: none;
+}
+
+.application__date-container {
+    grid-area: date;
+}
+
+.application__cv-container {
+    grid-area: cv;
+}
+
+.application__input--cv {
+    border: none;
+    padding: 0;
+}
+
+.application__button-submit {
+    grid-area: submit;
+    width: 35%;
+    background-color: #1B52DF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    justify-self: end;
+}

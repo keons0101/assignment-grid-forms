@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./layout-4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>layout-4</title>
 </head>
 <body>
-    
+    <main>
+        <section class="application__section">
+            <form class="application__form">
+                <div class="application__header">
+                    <h1>Job Application ( Web )</h1>
+                </div>
+
+                <div class="application__name-container">
+                    <label class="application__label">First Name</label>
+                    <input class="application__input" type="text" name="name" id="name" placeholder="Enter First Name">
+                </div>
+
+                <div class="application__last-name-container">
+                    <label class="application__label">Last Name</label>
+                    <input class="application__input" type="text" name="last_name" id="last_name" placeholder="Enter Last Name">
+                </div>
+
+                <div class="application__email-container">
+                    <label class="application__label">Email</label>
+                    <input class="application__input" type="email" name="email" id="email" placeholder="Enter Email">
+                </div>
+
+                <div class="application__job-container">
+                    <label class="application__label">Job Role</label>
+                    <select class="application__select application__select--job" name="job" id="job_role">
+                        <option value="backend">Frontend Developer</option>
+                        <option value="frontend">Backend Developer</option>
+                        <option value="fullstack">Fullstack Developer</option>
+                    </select>
+                </div>
+
+                <div class="application__adress-container">
+                    <label class="application__label">Enter Adress</label>
+                    <textarea class="application__textarea application__textarea--adress" name="adress" id="adress"></textarea>
+                </div>
+
+                <div class="application__city-container">
+                    <label class="application__label">City</label>
+                    <input class="application__input" type="text" name="city" id="city" placeholder="Enter City">
+                </div>
+
+                <div class="application__pincode-container">
+                    <label class="application__label">Zip</label>
+                    <input class="application__input application__input--zip" type="text" name="pincode" id="pincode" placeholder="Enter Zip Code" maxlength="6">
+                </div>
+
+                <div class="application__date-container">
+                    <label class="application__label">Start Date</label>
+                    <input class="application__input" type="date" name="date" id="date" value="2021-12-30">
+                </div>
+
+                <div class="application__cv-container">
+                    <label class="application__label">Upload Your CV</label>
+                    <input class="application__input application__input--cv" type="file" name="cv" id="cv" placeholder="Enter City">
+                </div>
+
+                <button class="application__button-submit" type="submit">Apply Now</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

@@ -144,6 +144,10 @@ body {
     resize: none;
 }
 
+.appointment__textarea--message::placeholder {
+    color: #111827;
+}
+
 /* ----- SUBMIT ----- */
 .appointment__button-submit {
     grid-area: submit;
